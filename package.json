@@ -1,20 +1,39 @@
 {
-  "name": "mongo-options",
+  "name": "mangop",
   "version": "1.0.0",
+  "description": "Minimal Mongoose schema options helper. Adds virtual id, hides fields, enables timestamps — clean and reusable.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mongoose",
     "schema",
+    "mongo",
     "options",
-    "mongo"
+    "helper",
+    "id",
+    "virtual",
+    "timestamps"
   ],
-  "author": "Akbar Iskandarov",
+  "author": {
+    "name": "Akbar Iskandarov",
+    "email": "your@email.com",
+    "url": "https://github.com/iskanderovv"
+  },
   "license": "MIT",
-  "devDependencies": {
-    "typescript": "^5.8.3"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iskanderovv/mangop.git"
+  },
+  "homepage": "https://github.com/iskanderovv/mangop#readme",
+  "bugs": {
+    "url": "https://github.com/iskanderovv/mangop/issues"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }
